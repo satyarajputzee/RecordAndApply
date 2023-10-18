@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5CB6AFD8-D375-4E11-954D-393FC2000B4C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99B9A077-A0CE-4E6A-8323-278A71444BFA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceFilter/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "createVoice1()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "99B9A077-A0CE-4E6A-8323-278A71444BFA - de36614d9e59450e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceFilter.ViewController.createVoice1() -&gt; ()"
+                  moduleName = "VoiceFilter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya.rajput/Documents/hari/RecordAndApply/VoiceFilter/VoiceFilter/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "841">
+               </Location>
+               <Location
+                  uuid = "99B9A077-A0CE-4E6A-8323-278A71444BFA - de36614d9e59450e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceFilter.ViewController.createVoice1() -&gt; ()"
+                  moduleName = "VoiceFilter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya.rajput/Documents/hari/RecordAndApply/VoiceFilter/VoiceFilter/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "861">
+               </Location>
+               <Location
+                  uuid = "99B9A077-A0CE-4E6A-8323-278A71444BFA - de36614d9e5947f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceFilter.ViewController.createVoice1() -&gt; ()"
+                  moduleName = "VoiceFilter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya.rajput/Documents/hari/RecordAndApply/VoiceFilter/VoiceFilter/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1078">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13E5B7E6-3606-47BF-B6F4-886DACAF6093"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceFilter/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "createVoice0()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
