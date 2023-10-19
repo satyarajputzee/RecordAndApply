@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dvE-2g-u9Q">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dvE-2g-u9Q">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +11,13 @@
         <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="RecordAndApply" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekT-j9-bq5">
-                                <rect key="frame" x="133" y="450.5" width="109.5" height="21"/>
+                                <rect key="frame" x="133" y="450.5" width="109" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,6 +41,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ekT-j9-bq5" firstAttribute="centerX" secondItem="GEH-iY-dU7" secondAttribute="centerX" id="EgB-T8-WGE"/>
@@ -52,7 +51,6 @@
                             <constraint firstItem="d5u-Hy-a6x" firstAttribute="centerX" secondItem="ekT-j9-bq5" secondAttribute="centerX" id="n9H-9M-pRe"/>
                             <constraint firstItem="GEH-iY-dU7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tvl-GK-1te"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="2v0-Gm-OAW"/>
                     <connections>
@@ -69,7 +67,7 @@
         <!--Play Sounds View Controller-->
         <scene sceneID="1OJ-5v-a9X">
             <objects>
-                <viewController id="Vd1-RX-p8Q" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vd1-RX-p8Q" customClass="PlaySoundsViewController" customModule="RecordAndApply" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gme-V8-Ta9" customClass="PlaySounds">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,15 +78,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8pg-cs-oT7">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="171.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-5x-CBI" userLabel="Slow Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="171.5"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-5x-CBI" userLabel="Slow Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="90"/>
                                                 <state key="normal" image="Slow"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="Vd1-RX-p8Q" eventType="touchUpInside" id="SFe-gK-ciV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVW-bl-Hf3" userLabel="Fast Button">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="171.5"/>
+                                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVW-bl-Hf3" userLabel="Fast Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="90"/>
                                                 <state key="normal" image="Fast"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="Vd1-RX-p8Q" eventType="touchUpInside" id="joF-WJ-d1m"/>
@@ -148,6 +146,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ARG-yV-9X6"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UKN-sm-zbG" firstAttribute="top" secondItem="ARG-yV-9X6" secondAttribute="top" id="4WZ-P3-492"/>
@@ -157,7 +156,6 @@
                             <constraint firstItem="uFe-MG-duj" firstAttribute="top" secondItem="UKN-sm-zbG" secondAttribute="bottom" constant="8" id="OLH-zG-UkB"/>
                             <constraint firstItem="ARG-yV-9X6" firstAttribute="bottom" secondItem="uFe-MG-duj" secondAttribute="bottom" constant="16" id="oy1-xZ-fqr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ARG-yV-9X6"/>
                     </view>
                     <connections>
                         <outlet property="chipmunkButton" destination="NAf-QK-D0X" id="C8g-5C-8fP"/>
