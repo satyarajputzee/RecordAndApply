@@ -31,7 +31,7 @@ class DotRadiusView2: UIView {
         for j in 0..<36 {
              amplitude = Int.random(in: 2...8)
                 for i in 0..<8 {
-                    print("amplitude \(amplitude) i = \(i) j = \(j)")
+//                    print("amplitude \(amplitude) i = \(i) j = \(j)")
                     let hexColor = "#B0EC31"
                     let greenColor = UIColor(hex: hexColor).cgColor
                     if amplitude < i {

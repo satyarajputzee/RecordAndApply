@@ -8,9 +8,11 @@
 import UIKit
 
 class DotRadiusView: UIView {
+     static var currentArray = [Int]()
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         if let context = UIGraphicsGetCurrentContext() {
+            context.clear(rect)
             // Define the center of the circle
             let centerX = rect.size.width / 2
             let centerY = rect.size.height / 2
@@ -18,13 +20,46 @@ class DotRadiusView: UIView {
             
             // Define the radius of the circle
             let circleRadius = min(rect.size.width, rect.size.height) / 2 - 100
+            //var arr: [Int] = [Int]()
             
             // Call the function to draw the dots
+            
             for j in 0..<36 {
-                let amplitude = Int.random(in: 3...8)
-                    for i in 0..<8 {
-                        drawDotsAlongRadius(center: centerPoint, radius: circleRadius + CGFloat(10 * i), degree: j,i:i, amplitude: amplitude, in: context)
-                    }
+                var amplitude = DotRadiusView.currentArray[j]
+                for i in 0..<10 {
+                    drawDotsAlongRadius(
+                        center: centerPoint,
+                        radius: circleRadius + CGFloat(12 * i),
+                        degree: j,
+                        i:i,
+                        amplitude: amplitude,
+                        in: context
+                    )
+//                    drawDotsAlongRadius(
+//                        center: centerPoint,
+//                        radius: circleRadius + CGFloat(12 * i),
+//                        degree: 9 + j,
+//                        i:i,
+//                        amplitude: amplitude,
+//                        in: context
+//                    )
+//                    drawDotsAlongRadius(
+//                        center: centerPoint,
+//                        radius: circleRadius + CGFloat(12 * i),
+//                        degree: 27 + j,
+//                        i:i,
+//                        amplitude: amplitude,
+//                        in: context
+//                    )
+//                    drawDotsAlongRadius(
+//                        center: centerPoint,
+//                        radius: circleRadius + CGFloat(12 * i),
+//                        degree: 18 + j,
+//                        i:i,
+//                        amplitude: amplitude,
+//                        in: context
+//                    )
+                }
             }
         }
     }

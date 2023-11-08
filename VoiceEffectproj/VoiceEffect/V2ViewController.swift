@@ -10,7 +10,10 @@ import AudioKit
 import AVFoundation
 
 class V2ViewController: UIViewController {
+    
     private let audioManager: SCAudioManager!
+    var dotRadiusView1 = UIView()
+    var timer: Timer?
     required init?(coder: NSCoder) {
         audioManager = SCAudioManager()
 
@@ -20,9 +23,6 @@ class V2ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        waveformView.configuration = waveformView.configuration.with(
-//            style: styleForSelection(index: styleSelector.selectedSegmentIndex)
-//        )
         audioManager.prepareAudioRecording()
     }
     lazy var recordButton: UIButton! = {
@@ -49,8 +49,8 @@ class V2ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(updateDrawing), userInfo: nil, repeats: true)
+
         // Do any additional setup after loading the view.
         let view = UIView()
         
@@ -67,9 +67,22 @@ class V2ViewController: UIViewController {
       
         view.backgroundColor = UIColor(red: 0.151, green: 0.151, blue: 0.162, alpha: 0.8)
         
+        let charImageView2 =  UIImageView(image: UIImage(named: "ma"))
+        charImageView2.frame = CGRectMake(135, 170, 35, 35)
         
-//        //----
-//
+        let userImageView2 =  UIImageView(image: UIImage(named: "avatar"))
+        userImageView2.frame = CGRectMake(105, 105, 90, 90)
+        
+        for i in 0...36 {
+            DotRadiusView.currentArray.append(0)
+        }
+        
+        dotRadiusView1 = DotRadiusView(frame: CGRect(x: 50, y: 100, width: 300, height: 300))
+        
+        view.addSubview(dotRadiusView1)
+        dotRadiusView1.addSubview(userImageView2)
+        dotRadiusView1.addSubview(charImageView2)
+        
         let imageView = UIImageView()
         imageView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
         let dotRadiusView2 = DotRadiusView2(frame: CGRect(x: 50, y: 400, width: 300, height: 300))
@@ -82,43 +95,15 @@ class V2ViewController: UIViewController {
         dotRadiusView2.backgroundColor = .clear
         view.addSubview(dotRadiusView2)
         
-        //----------
-
-//        UIView.animate(withDuration: 1.0, delay: 0.1, options: .repeat, animations: { [weak self] in
-//            image1 = DotRadiusView2.drawCurrentImage2()
-//            imageView.image = image1
-//            imageView.alpha = 0.1
-//            dotRadiusView2.addSubview(imageView)
-//            dotRadiusView2.addSubview(userImageView1)
-//            dotRadiusView2.addSubview(charImageView1)
-//            dotRadiusView2.backgroundColor = .clear
-//            view.addSubview(dotRadiusView2)
-////            dotRadiusView2.setNeedsDisplay()
-//            // dotRadiusView2.setNeedsDisplay()
-//        }, completion: { finished in
-//            dotRadiusView2.setNeedsDisplay()
-//            imageView.removeFromSuperview()
-////            self.view.removeFromSuperview()
-//        })
-        
-        
-//        UIView.animate(withDuration: 1.0, delay: 0.0, options: .repeat, animations: { [weak self] in
-//            view.addSubview(dotRadiusView)
-//        }, completion: { finished in
-//            dotRadiusView.removeFromSuperview()
-//        })
-        
-        
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            UIView.animate(withDuration: 1.0, delay: 0.0,options: .repeat, animations: {
-//                dotRadiusView2.setNeedsDisplay()
-            })
-        }
-        
         view.addSubview(recordButton)
         recordButton.frame = CGRect(x: 100, y: 700, width: 180, height: 40)
         self.view = view
+    }
+    
+    @objc func updateDrawing(sender: Any) {
+//        DotRadiusView.currentArray.insert(Int.random(in: 1...10), at: 0)
+//        DotRadiusView.currentArray.removeLast()
+        dotRadiusView1.setNeedsDisplay()
     }
 }
 extension V2ViewController: RecordingDelegate {
@@ -134,9 +119,11 @@ extension V2ViewController: RecordingDelegate {
     }
 
     func audioManager(_ manager: SCAudioManager!, didUpdateRecordProgress progress: CGFloat) {
-        print("current power: \(manager.lastAveragePower()) dB")
-        let linear = 1 - pow(10, manager.lastAveragePower() / 20)
-        print("linear: \(linear)")
+//        print("current power: \(manager.lastAveragePower()) dB")
+        let linear = pow(10, manager.lastAveragePower() / 20) * 20
+        print("linear: \(linear * 50)")
+        DotRadiusView.currentArray.insert(Int(linear), at: 0)
+        DotRadiusView.currentArray.removeLast()
         // Here we add the same sample 3 times to speed up the animation.
         // Usually you'd just add the sample once.
 //        waveformView.add(samples: [linear, linear, linear])

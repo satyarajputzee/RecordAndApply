@@ -18,7 +18,7 @@
 @implementation SCAudioManager
 
 static const NSTimeInterval kMinRecordingTime =  0.3;
-static const NSTimeInterval kMaxRecordingTime = 90.0;
+static const NSTimeInterval kMaxRecordingTime = 10.0;
 static NSString const *kSCTemporaryRecordedAudioFilename = @"audio_temp.m4a";
 static NSString const *kSCDownloadedAudioFilename = @"loaded_sound.m4a";
 static NSString const *kSCRecordingsFolderName = @"recordings";
@@ -65,7 +65,7 @@ static NSString const *kSCRecordingsFolderName = @"recordings";
         self.currentRecordingTime = 0.0;
         [self.recorder record];
         [self.updateProgressIndicatorTimer invalidate];
-        self.updateProgressIndicatorTimer = [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(recordingStatusDidUpdate) userInfo:nil repeats:YES];
+        self.updateProgressIndicatorTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(recordingStatusDidUpdate) userInfo:nil repeats:YES];
     }
 }
 

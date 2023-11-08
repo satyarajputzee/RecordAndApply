@@ -50,6 +50,38 @@
             endingLineNumber = "114"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "01B58640-105A-4D0F-AAC7-6A1FDCC753CF - b4fdae5b3d96b866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "2688">
+               </Location>
+               <Location
+                  uuid = "01B58640-105A-4D0F-AAC7-6A1FDCC753CF - b4fdae5b3d96b866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "2768">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -66,6 +98,38 @@
             endingLineNumber = "125"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FE32FB94-D557-4725-9DD8-9136E269F7EC - b4fdae5b3d96b866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "2688">
+               </Location>
+               <Location
+                  uuid = "FE32FB94-D557-4725-9DD8-9136E269F7EC - b4fdae5b3d96b866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "2768">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -82,6 +146,38 @@
             endingLineNumber = "124"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "182B4874-DA9A-4576-BD03-D0C5A27A65FE - b4fdae5b3d96b866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "2688">
+               </Location>
+               <Location
+                  uuid = "182B4874-DA9A-4576-BD03-D0C5A27A65FE - b4fdae5b3d96b866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "2768">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -98,6 +194,38 @@
             endingLineNumber = "121"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E6A06302-AD25-4C6C-812A-83D56EE8767B - b4fdae5b3d96b866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "2688">
+               </Location>
+               <Location
+                  uuid = "E6A06302-AD25-4C6C-812A-83D56EE8767B - b4fdae5b3d96b866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "2768">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -114,6 +242,38 @@
             endingLineNumber = "104"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FED6559C-7C38-4FB1-BA57-0A66E07FCCAD - b4fdae5b3d96b5c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "2536">
+               </Location>
+               <Location
+                  uuid = "FED6559C-7C38-4FB1-BA57-0A66E07FCCAD - b4fdae5b3d96b5c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/GitHub/RecordAndApply/VoiceEffectproj/VoiceEffect/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "2616">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
