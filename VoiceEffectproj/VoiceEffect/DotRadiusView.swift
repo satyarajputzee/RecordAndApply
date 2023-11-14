@@ -24,46 +24,43 @@ class DotRadiusView: UIView {
             
             // Call the function to draw the dots
             
-            for j in 0..<36 {
-                var amplitude = DotRadiusView.currentArray[j]
-                for i in 0..<10 {
-                    drawDotsAlongRadius(
+            for i in 1..<20 {
+                    var amplitude = DotRadiusView.currentArray[i]
+                    drawDotsAlongRadius2(
                         center: centerPoint,
                         radius: circleRadius + CGFloat(12 * i),
-                        degree: j,
                         i:i,
                         amplitude: amplitude,
                         in: context
                     )
-//                    drawDotsAlongRadius(
-//                        center: centerPoint,
-//                        radius: circleRadius + CGFloat(12 * i),
-//                        degree: 9 + j,
-//                        i:i,
-//                        amplitude: amplitude,
-//                        in: context
-//                    )
-//                    drawDotsAlongRadius(
-//                        center: centerPoint,
-//                        radius: circleRadius + CGFloat(12 * i),
-//                        degree: 27 + j,
-//                        i:i,
-//                        amplitude: amplitude,
-//                        in: context
-//                    )
-//                    drawDotsAlongRadius(
-//                        center: centerPoint,
-//                        radius: circleRadius + CGFloat(12 * i),
-//                        degree: 18 + j,
-//                        i:i,
-//                        amplitude: amplitude,
-//                        in: context
-//                    )
+                    
                 }
             }
         }
-    }
     
+    
+    func drawDotsAlongRadius2(center: CGPoint, radius: CGFloat,i: Int, amplitude: Int, in context: CGContext) {
+        let hexColor = "#B0EC31"
+        let greenColor = UIColor(hex: hexColor).cgColor
+        if amplitude < i {
+            context.setFillColor(UIColor.clear.cgColor) // Set the dot color
+        } else {
+            context.setFillColor(greenColor) // Set the dot color
+        }
+        
+        for _ in 0..<i {
+            let dx = Double (0.3 * Double(i))
+            for degree in 0..<36 {
+                let angleIncrement = .pi / CGFloat(18)
+                let angle = angleIncrement * CGFloat(degree)
+                let dotX = center.x + radius * cos(angle)
+                let dotY = center.y + radius * sin(angle)
+                let dotRect = CGRect(x: dotX - 4, y: dotY - 4, width: 8 + dx , height: 8 + dx) // Adjust the size of the dot as needed
+                context.addEllipse(in: dotRect)
+                context.fillPath()
+            }
+        }
+    }
     func drawDotsAlongRadius(center: CGPoint, radius: CGFloat,degree: Int ,i: Int, amplitude: Int, in context: CGContext) {
         let hexColor = "#B0EC31"
         let greenColor = UIColor(hex: hexColor).cgColor

@@ -49,7 +49,7 @@ class V2ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(updateDrawing), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateDrawing), userInfo: nil, repeats: true)
 
         // Do any additional setup after loading the view.
         let view = UIView()
@@ -73,7 +73,7 @@ class V2ViewController: UIViewController {
         let userImageView2 =  UIImageView(image: UIImage(named: "avatar"))
         userImageView2.frame = CGRectMake(105, 105, 90, 90)
         
-        for i in 0...36 {
+        for i in 0...20 {
             DotRadiusView.currentArray.append(0)
         }
         
@@ -120,7 +120,7 @@ extension V2ViewController: RecordingDelegate {
 
     func audioManager(_ manager: SCAudioManager!, didUpdateRecordProgress progress: CGFloat) {
 //        print("current power: \(manager.lastAveragePower()) dB")
-        let linear = pow(10, manager.lastAveragePower() / 20) * 20
+        let linear = pow(10, manager.lastAveragePower() / 20) * 50
         print("linear: \(linear * 50)")
         DotRadiusView.currentArray.insert(Int(linear), at: 0)
         DotRadiusView.currentArray.removeLast()
