@@ -1,0 +1,6 @@
+framework module Pods_VoiceEffect {
+  umbrella header "Pods-VoiceEffect-umbrella.h"
+
+  export *
+  module * { export * }
+}

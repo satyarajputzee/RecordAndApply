@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0CAE1877-5CE1-420B-A39A-B5004B5F8A09"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E489905F-1224-4E43-9839-E8051C6CF2FB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceEffect/DotRadiusView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "draw(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E489905F-1224-4E43-9839-E8051C6CF2FB - 2cbe8bbadae5f68b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.DotRadiusView.draw(__C.CGRect) -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/2222/VoiceEffectproj/VoiceEffect/DotRadiusView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "936">
+               </Location>
+               <Location
+                  uuid = "E489905F-1224-4E43-9839-E8051C6CF2FB - 2cbe8bbadae5f6a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.DotRadiusView.draw(__C.CGRect) -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/2222/VoiceEffectproj/VoiceEffect/DotRadiusView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1168">
+               </Location>
+               <Location
+                  uuid = "E489905F-1224-4E43-9839-E8051C6CF2FB - 2cbe8bbadae5f16a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.DotRadiusView.draw(__C.CGRect) -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/2222/VoiceEffectproj/VoiceEffect/DotRadiusView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1804">
+               </Location>
+               <Location
+                  uuid = "E489905F-1224-4E43-9839-E8051C6CF2FB - 2cbe8bbadae5f16a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceEffect.DotRadiusView.draw(__C.CGRect) -&gt; ()"
+                  moduleName = "VoiceEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satya/Documents/ZEE5/2222/VoiceEffectproj/VoiceEffect/DotRadiusView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1800">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

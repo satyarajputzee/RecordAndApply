@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AudioKit
 import AVFoundation
 
 class ViewController: UIViewController {
@@ -109,22 +108,22 @@ class ViewController: UIViewController {
         
         //----------
 
-        UIView.animate(withDuration: 1.0, delay: 0.1, options: .repeat, animations: { [weak self] in
-            image1 = DotRadiusView2.drawCurrentImage2()
-            imageView.image = image1
-            imageView.alpha = 0.1
-            dotRadiusView2.addSubview(imageView)
-            dotRadiusView2.addSubview(userImageView1)
-            dotRadiusView2.addSubview(charImageView1)
-            dotRadiusView2.backgroundColor = .clear
-            view.addSubview(dotRadiusView2)
+//        UIView.animate(withDuration: 1.0, delay: 0.1, options: .repeat, animations: { [weak self] in
+//            image1 = DotRadiusView2.drawCurrentImage2()
+//            imageView.image = image1
+//            imageView.alpha = 0.1
+//            dotRadiusView2.addSubview(imageView)
+//            dotRadiusView2.addSubview(userImageView1)
+//            dotRadiusView2.addSubview(charImageView1)
+//            dotRadiusView2.backgroundColor = .clear
+//            view.addSubview(dotRadiusView2)
+////            dotRadiusView2.setNeedsDisplay()
+//            // dotRadiusView2.setNeedsDisplay()
+//        }, completion: { finished in
 //            dotRadiusView2.setNeedsDisplay()
-            // dotRadiusView2.setNeedsDisplay()
-        }, completion: { finished in
-            dotRadiusView2.setNeedsDisplay()
-            imageView.removeFromSuperview()
-//            self.view.removeFromSuperview()
-        })
+//            imageView.removeFromSuperview()
+////            self.view.removeFromSuperview()
+//        })
         
         
 //        UIView.animate(withDuration: 1.0, delay: 0.0, options: .repeat, animations: { [weak self] in
